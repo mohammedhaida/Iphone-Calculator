@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    min-height: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Colors */
+    background-color: black;
+    color: white;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    width: fit-content;
+    margin: auto;
+}
+.container .result {
+    font-size: 100px;
+    align-self: flex-end;
+    margin-right: 10px;
+    font-weight: 300;
+}
+.container .keys {
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(4,90px);
+    grid-template-rows: repeat(5, 90px);
+    gap: 10px;
+}
+.container .keys .number-0 {
+    grid-column: 1 / 3;
+    border-radius: 40px;
+}
+.container .keys button {
+    /* Font */
+    font-size: 45px;
+    font-weight: 300;
+    /* Border */
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+.container .keys .item-1 {
+    background-color: #9f9f9f;
+}
+.container .keys .item-2 {
+    background-color: #f69906;
+    color: white;
+}
+.container .keys .item-3 {
+    background-color: #313131;
+    color: white;
+}
